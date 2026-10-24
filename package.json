@@ -1,0 +1,30 @@
+{
+  "name": "promptsite",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && (prisma db push --skip-generate || echo 'UYARI: db push calismadi, DATABASE_URL kontrol edin') && next build",
+    "start": "next start",
+    "postinstall": "prisma generate",
+    "db:push": "prisma db push"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "4.6.0",
+    "@prisma/client": "5.20.0",
+    "jszip": "3.10.1",
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.16.10",
+    "@types/react": "18.3.11",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.47",
+    "prisma": "5.20.0",
+    "tailwindcss": "3.4.13",
+    "typescript": "5.6.2"
+  }
+}
